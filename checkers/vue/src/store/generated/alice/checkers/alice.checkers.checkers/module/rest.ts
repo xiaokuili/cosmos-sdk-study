@@ -9,6 +9,19 @@
  * ---------------------------------------------------------------
  */
 
+export interface CheckersMsgCreateGameResponse {
+  gameIndex?: string;
+}
+
+export interface CheckersMsgPlayMoveResponse {
+  /** @format int32 */
+  capturedX?: number;
+
+  /** @format int32 */
+  capturedY?: number;
+  winner?: string;
+}
+
 /**
  * Params defines the parameters for the module.
  */
@@ -51,11 +64,23 @@ export interface CheckersStoredGame {
   turn?: string;
   black?: string;
   red?: string;
+  winner?: string;
+  deadline?: string;
+
+  /** @format uint64 */
+  moveCount?: string;
+  beforeIndex?: string;
+  afterIndex?: string;
+
+  /** @format uint64 */
+  wager?: string;
 }
 
 export interface CheckersSystemInfo {
   /** @format uint64 */
   nextId?: string;
+  fifoHeadIndex?: string;
+  fifoTailIndex?: string;
 }
 
 export interface ProtobufAny {
