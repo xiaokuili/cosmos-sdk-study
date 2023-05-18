@@ -6,7 +6,9 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )
 
+// x/checkers module sentinel errors
 var (
+<<<<<<< HEAD
 	ErrInvalidBlack         = sdkerrors.Register(ModuleName, 1100, "black address is invalid: %s")
 	ErrInvalidRed           = sdkerrors.Register(ModuleName, 1101, "red address is invalid: %s")
 	ErrGameNotParseable     = sdkerrors.Register(ModuleName, 1102, "game cannot be parsed")
@@ -30,4 +32,7 @@ var (
 	ErrCannotRefundWager = sdkerrors.Register(ModuleName, 1116, "cannot refund wager to: %s")
 	ErrCannotPayWinnings = sdkerrors.Register(ModuleName, 1117, "cannot pay winnings to winner: %s")
 	ErrNotInRefundState  = sdkerrors.Register(ModuleName, 1118, "game is not in a state to refund, move count: %d")
+=======
+	ErrSample = sdkerrors.Register(ModuleName, 1100, "sample error")
+>>>>>>> e0c2fab (restart)
 )
