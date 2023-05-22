@@ -1,0 +1,12 @@
+syntax = "proto3";
+package datafactory.datafactory;
+
+import "gogoproto/gogo.proto";
+import "datafactory/datafactory/params.proto";
+
+option go_package = "datafactory/x/datafactory/types";
+
+// GenesisState defines the datafactory module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

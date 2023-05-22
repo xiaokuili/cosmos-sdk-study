@@ -1,0 +1,7 @@
+syntax = "proto3";
+package datafactory.datafactory;
+
+option go_package = "datafactory/x/datafactory/types";
+
+// Msg defines the Msg service.
+service Msg {}
