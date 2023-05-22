@@ -113,6 +113,7 @@ import (
 	datafactorymodule "datafactory/x/datafactory"
 	datafactorymodulekeeper "datafactory/x/datafactory/keeper"
 	datafactorymoduletypes "datafactory/x/datafactory/types"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
 	appparams "datafactory/app/params"
